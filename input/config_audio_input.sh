@@ -13,5 +13,5 @@ NEW_DEVICE_NAME="${DEFAULT_SOURCE}.echo-cancel"
 pactl set-default-source $NEW_DEVICE_NAME
 
 if [[ $VOLUME =~ ^[0-9]+$ ]]; then
-    pactl set-source-volume "${DEFAULT_SOURCE}.echo-cancel" $VOLUME%
+    pactl set-source-volume "${NEW_DEVICE_NAME}.echo-cancel" $VOLUME%
 fi
